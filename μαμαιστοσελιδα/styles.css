@@ -1,0 +1,295 @@
+/* Global Styles */
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333; /* Default text color */
+}
+
+/* Top Bar */
+.top-bar {
+    background-color: #d0ebff;
+    padding: 10px 0;
+}
+
+header.name-header {
+    background-color: white;
+  }
+
+
+/* Sidebar Styles */
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    padding-top: 60px;
+    z-index: 1000;
+}
+
+#sidebar.active {
+    left: 0;
+}
+
+/* Sidebar Links */
+.nav-link {
+    color: #333 !important;
+}
+
+.nav-link:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Sidebar Toggle Button */
+#sidebarToggle {
+    z-index: 1100;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    transition: left 0.3s ease-in-out;
+}
+
+#sidebarToggle.active {
+    left: 260px;
+}
+
+/* Service Cards */
+.service-card {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    transition: box-shadow 0.3s ease-in-out;
+    margin-bottom: 20px;
+}
+
+.service-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+.footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    #sidebar {
+        display: none;
+    }
+    #sidebar.active {
+        display: block;
+    }
+}
+
+/* Button Hover Effects */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Overlay when Sidebar is active */
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent black background */
+    z-index: 900; /* Behind sidebar but in front of main content */
+    display: none; /* Hidden by default */
+}
+
+/* When Sidebar is Active, show the overlay */
+#sidebar.active + #overlay {
+    display: block;
+}
+
+/* Styling for ΥΠΗΡΕΣΙΕΣ Section */
+.services {
+    background-color: #f0f8ff; /* Light blue color */
+    padding: 40px 0;
+}
+
+.services h2 {
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.services .col-md-4 h4 {
+    color: #333;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.services .col-md-4 ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.services .col-md-4 ul li {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Styling for ΣΥΜΒΟΥΛΕΣ ΓΙΑ ΥΓΙΗ ΔΟΝΤΙΑ Section */
+.dental-tips {
+    background-color: #f9fbe7; /* Light yellowish-green color */
+    padding: 40px 0;
+}
+
+.dental-tips h2 {
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.dental-tips .col-md-4 h4 {
+    color: #333;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.dental-tips .col-md-4 ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.dental-tips .col-md-4 ul li {
+    font-size: 16px;
+    color: #555;
+}
+/* Styling for Map Section */
+.map-section {
+    background-color: #f1f1f1; /* Light gray background */
+    padding: 40px 0;
+    text-align: center;
+}
+
+.map-section h2 {
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.map-container iframe {
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for a nice effect */
+}
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Adjust to desired height */
+    overflow: hidden;
+}
+#heroCarousel .carousel-item img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Overlay for Text */
+.hero-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.4); /* Optional dark overlay for readability */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.about-us {
+    background-color: #f8f9fa; /* Light Gray Background */
+    padding: 60px 0;
+}
+
+.profile-photo {
+    max-width: 250px; /* Ensures a good size */
+    border: 5px solid #007bff; /* Blue Border */
+}
+    /* Make navigation buttons rounded */
+.header-nav .nav-link {
+    color: #007bff;
+    font-weight: bold;
+    margin: 0 10px;
+    padding: 8px 15px;
+    border-radius: 20px; /* Rounded edges */
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none; /* Remove underline */
+}
+
+.header-nav .nav-link:hover {
+    background-color: #007bff;
+    color: white;
+    text-decoration: none; /* Ensure no underline */
+}
+
+/* Round the sidebar toggle button */
+#sidebarToggle {
+    border-radius: 10px;
+}
+/* Stylish Containers for Services */
+.services .container {
+    max-width: 1200px;
+}
+
+/* Service Card Style */
+.service-card {
+    background: #f8f9fa; /* Light gray background */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Service Title */
+.service-card h4 {
+    color: #007bff;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+/* Service List */
+.service-card ul {
+    padding-left: 20px;
+}
+
+.service-card li {
+    list-style-type: disc; /* Standard bullet point */
+    padding: 5px 0;
+}

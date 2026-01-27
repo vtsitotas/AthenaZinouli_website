@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Οδοντιατρείο Αθηνάς Ζηνούλη</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body>
+    <!-- Top Bar -->
+<div class="top-bar text-center py-2" style="background-color: #d0ebff;">
+    <a href="tel:+1234567890" class="me-3 text-dark"><i class="bi bi-telephone-fill"></i> 2410-534986</a>
+    <a href="tel:+0987654321" class="me-3 text-dark"><i class="bi bi-telephone-fill"></i> 69-38375045</a>
+    <a href="mailto:azinouli@yahoo.gr" class="text-dark"><i class="bi bi-envelope-fill"></i> azinouli@yahoo.gr</a>
+</div>
+
+<!-- Header with Navigation -->
+<header class="main-header d-flex flex-column align-items-center py-3" style="background: white; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);">
+    <div class="d-flex align-items-center">
+        <img src="2tgUel21Vi1TNFf2rbZOO2bKU1b.png" alt="Οδοντιατρείο Αθηνάς Ζηνούλη" class="logo" style="height: 50px; margin-right: 20px;">
+        <h2 class="m-0">Αθηνά Ζηνούλη-Τσιτώτα</h2>
+    </div>
+
+    <!-- Navigation Links (Same as Sidebar) -->
+    <nav class="header-nav mt-2">
+        <ul class="nav justify-content-center">
+            <li class="nav-item"><a class="nav-link" href="#home">ΑΡΧΙΚΗ</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">ΠΡΟΦΙΛ</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services">ΥΠΗΡΕΣΙΕΣ</a></li>
+            <li class="nav-item"><a class="nav-link" href="#dental-tips">DENTAL TIPS</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+        </ul></div>
+    </nav>
+</header>
+
+<!-- Sidebar Toggle Button -->
+<button id="sidebarToggle" class="btn btn-primary position-fixed top-0 start-0 m-3">
+    <i class="bi bi-list"></i>
+</button>
+
+<!-- Sidebar -->
+<nav id="sidebar" class="col-md-3 col-lg-2 bg-light sidebar">
+    <div class="position-sticky">
+        <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#home">ΑΡΧΙΚΗ</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">ΠΡΟΦΙΛ</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services">ΥΠΗΡΕΣΙΕΣ</a></li>
+            <li class="nav-item"><a class="nav-link" href="#dental-tips">DENTAL TIPS</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+        </ul></div>
+    </div>
+</nav>
+
+<!-- Overlay (for shadow effect) -->
+<div id="overlay"></div>
+
+<main class="main-content">
+    <div class="hero" id="home">
+        <!-- Background Carousel -->
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000" data-bs-pause="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/office.jpg" class="d-block w-100" alt="Dentist Profile">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/entrance.jpg" class="d-block w-100" alt="Patients Smiling">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/equip2.jpg" class="d-block w-100" alt="Dental Checkup">
+                </div>
+            </div>
+        </div>
+
+        <!-- Overlay -->
+        <div class="hero-overlay">
+            <h1>Οδοντιατρείο Αθηνάς Ζηνούλη</h1>
+        </div>
+    </div>
+</main>
+
+<!-- Fix the initial delay issue -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let heroCarousel = new bootstrap.Carousel(document.getElementById("heroCarousel"), {
+            interval: 3000, // 3-second interval
+            ride: "carousel" // Forces immediate start
+        });
+    });
+</script>
+
+
+    
+
+<section id="about" class="about-us">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Dentist's Profile Picture -->
+            <div class="col-md-4 text-center">
+                <img src="images/profile1.jpg" alt="Οδοντίατρος" class="profile-photo img-fluid rounded-circle shadow">
+            </div>
+            
+            <!-- About Text -->
+            <div class="col-md-8">
+                <h2>Ποια Είμαι</h2>
+                <p>
+                    Καλώς ήρθατε στην κλινική μου, όπου η υγεία και η αισθητική του χαμόγελού σας είναι η προτεραιότητά μου. 
+                    Προσφέρω υψηλού επιπέδου οδοντιατρικές υπηρεσίες με σύγχρονο εξοπλισμό και φιλική προσέγγιση προς κάθε ασθενή. Κάθε επίσκεψη είναι μοναδική και προσαρμοσμένη στις ανάγκες του κάθε ατόμου, προσπαθώντας πάντα για τα καλύτερα αποτελέσματα.
+                </p>
+                <p>
+                    Είμαι η <strong>Αθηνά Ζηνούλη</strong>, η επικεφαλής οδοντίατρος του ιατρείου μου. Διαθέτω πάνω από 30 χρόνια εμπειρίας στον τομέα της οδοντιατρικής και έχω σπουδάσει στο <strong>Αριστοτέλειο Πανεπιστήμιο Θεσσαλονίκης</strong>.Έχω αναπτύξει τη φήμη μου ως μία από τις κορυφαίες οδοντιάτρους στην περιοχή, προσφέροντας καινοτόμες και αποτελεσματικές θεραπείες.
+                </p>
+                <p>
+                    Στην κλινική μου, με υπερσύγχρονο εξοπλισμό και τεχνολογία τελευταίας γενιάς, προσφέρω εξατομικευμένες θεραπείες για κάθε ασθενή, εξασφαλίζοντας όχι μόνο υγιή, αλλά και αισθητικά άψογα αποτελέσματα. Η φιλοσοφία μου επικεντρώνεται στην πρόληψη, τη θεραπεία και την αισθητική βελτίωση του χαμόγελου. Για μένα, κάθε ασθενής είναι μοναδικός και η αντιμετώπισή του είναι προσωπική και προσεκτικά σχεδιασμένη με βάση τις ανάγκες του.
+                </p>
+                <p>
+                    Το προσωπικό μου είναι πάντα έτοιμο να προσφέρει άνεση και ασφάλεια σε κάθε βήμα της διαδικασίας, διασφαλίζοντας ότι κάθε επισκέπτης φεύγει από την κλινική με ένα υγιές και λαμπερό χαμόγελο.
+                </p>
+            </div>
+            
+        </div>
+    </div>
+</section>
+        
+        <!-- ΥΠΗΡΕΣΙΕΣ Section -->
+<section class="services text-center fade-in" id="services">
+    <div class="container">
+        <h2>ΥΠΗΡΕΣΙΕΣ</h2>
+        <div class="row">
+            <div class="col-md-4">                <div class="service-card">
+
+                <h4>Καθαρισμός Δοντιών</h4>
+                <ul>
+                    <li>Ο καθαρισμός των δοντιών είναι μία από τις πιο συνηθισμένες οδοντιατρικές πράξεις και αφορά την απομάκρυνση της οδοντικής πέτρας.</li>
+                    <li>Κρίνεται απαραίτητος μία φορά το εξάμηνο.</li>
+                    <li>Κατά τον καθαρισμό, ο οδοντίατρος πραγματοποιεί έλεγχο της οδοντοστοιχίας και καταγράφει πιθανές βλάβες.</li>
+                    <li>Ο ασθενής συμπληρώνει το οδοντιατρικό ιστορικό και το οδοντόγραμμα.</li>
+                </ul></div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card">
+                <h4>Εξαγωγή Δοντιού</h4>
+                <ul>
+                    <li>Η εξαγωγή είναι έσχατη λύση, πραγματοποιείται όταν όλες οι άλλες θεραπείες έχουν αποτύχει.</li>
+                    <li>Ενδείξεις για εξαγωγή: Προχωρημένη τερηδόνα, Περιοδοντίτιδα, Κάταγμα δοντιού, Οδοντικό απόστημα, Έγκλειστα δόντια, Ορθοδοντική θεραπεία.</li>
+                </ul></div>
+            </div>
+            <div class="col-md-4"><div class="service-card">
+                <h4>Νάρθηκας Βρουξισμού / Αθλητικός Νάρθηκας</h4>
+                <ul>
+                    <li>Ο αθλητικός νάρθηκας χρησιμοποιείται από αθλητές για προστασία των δοντιών και της κροταφογναθικής άρθρωσης κατά τη διάρκεια της άθλησης.</li>
+                    <li>Μειώνει τον κίνδυνο τραυματισμών και εγκεφαλικών διασεισμών.</li>
+                </ul></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4"><div class="service-card">
+                <h4>Μερική - Ολική Οδοντοστοιχία</h4>
+                <ul>
+                    <li>Οι μερικές οδοντοστοιχίες καλύπτουν τα κενά δοντιών με υψηλής αντοχής μεταλλικό σκελετό.</li>
+                    <li>Οι ολικές οδοντοστοιχίες χρησιμοποιούνται για ασθενείς που έχουν χάσει όλα τα δόντια τους.</li>
+                </ul></div>
+            </div>
+            <div class="col-md-4"><div class="service-card">
+                <h4>Κεραμικά Επένθετα (Porcelain Onlays)</h4>
+                <ul>
+                    <li>Τα κεραμικά επένθετα προσφέρουν άριστο αισθητικό και λειτουργικό αποτέλεσμα.</li>
+                    <li>Εξασφαλίζουν καλύτερη εφαρμογή και αντοχή από τα κοινά σφραγίσματα.</li>
+                </ul></div>
+            </div>
+            <div class="col-md-4"><div class="service-card">
+                <h4>Ολοκεραμικές Στεφάνες</h4>
+                <ul>
+                    <li>Οι ολοκεραμικές στεφάνες είναι από πορσελάνη ή ζιρκόνιο, ιδανικές για αισθητικά αποτελέσματα.</li>
+                    <li>Καλύπτουν χρωστικές και μικροκενά, και προσφέρουν φυσική εμφάνιση.</li>
+                </ul></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4"><div class="service-card">
+                <h4>Dental Face Lift</h4>
+                <ul>
+                    <li>Η δημιουργία εξατομικευμένων ναρθηκών προστατεύει τα δόντια και ανακουφίζει από πονοκεφάλους και πόνους στην κροταφογναθική άρθρωση.</li>
+                    <li>Βελτιώνει την εμφάνιση του προσώπου, μειώνοντας τις ρυτίδες και αναδιαρθρώνοντας τις γνάθους.</li>
+                </ul></div>
+            </div>
+            <div class="col-md-4"><div class="service-card">
+                <h4>Περιοδοντίτιδα & Ουλίτιδα</h4>
+                <ul>
+                    <li>Η περιοδοντίτιδα προκαλεί καταστροφή των ιστών γύρω από τα δόντια και είναι συνήθως αποτέλεσμα της ουλίτιδας.</li>
+                    <li>Η ουλίτιδα προκαλεί φλεγμονή και αιμορραγία των ούλων.</li>
+                </ul></div>
+            </div>
+            <div class="col-md-4"><div class="service-card">
+                <h4>Λευκά Σφραγίσματα</h4>
+                <ul>
+                    <li>Τα λευκά σφραγίσματα παρέχουν αισθητικά άριστο αποτέλεσμα και μεγαλύτερη αντοχή από τα παλαιότερα μεταλλικά.</li>
+                    <li>Χρησιμοποιούνται με σύνθετες ρητίνες που συγκολλούνται ισχυρά στα δόντια.</li>
+                </ul></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4"><div class="service-card">
+                <h4>Φθορίωση</h4>
+                <ul>
+                    <li>Η φθορίωση εφαρμόζεται από τον οδοντίατρο για την προστασία των δοντιών από τερηδόνα, κυρίως σε παιδιά από την ηλικία των 3-4 ετών.</li>
+                </ul></div>
+            </div>
+            <div class="col-md-4"><div class="service-card">
+                <h4>Σφράγισμα</h4>
+                <ul>
+                    <li>Το σφράγισμα αποκαθιστά δόντια που έχουν υποστεί φθορά από τερηδόνα.</li>
+                    <li>Εξασφαλίζει προστασία από περαιτέρω φθορά και βελτιώνει την αισθητική.</li>
+                </ul></div>
+            </div>
+            <div class="col-md-4"><div class="service-card">
+                <h4>Όψεις Πορσελάνης</h4>
+                <ul>
+                    <li>Οι όψεις πορσελάνης βελτιώνουν το σχήμα, το χρώμα και την εμφάνιση των δοντιών.</li>
+                    <li>Προσφέρουν φυσικό αποτέλεσμα και ενισχύουν την αυτοπεποίθηση.</li>
+                </ul></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4"><div class="service-card">
+                <h4>Λεύκανση</h4>
+                <ul>
+                    <li>Η λεύκανση των δοντιών επιτυγχάνεται με υπεροξείδιο του καρβίδιου για τη χημική διάσπαση των χρωστικών.</li>
+                    <li>Μπορεί να γίνει στο ιατρείο ή στο σπίτι, προσφέροντας θεαματικά αποτελέσματα.</li>
+                </ul></div>
+            </div>
+            <div class="col-md-4"><div class="service-card">
+                <h4>Προληπτική Οδοντιατρική</h4>
+                <ul>
+                    <li>Η προληπτική οδοντιατρική περιλαμβάνει: Τακτικό καθαρισμό των δοντιών, Κάλυψη σχισμών και οπών (sealants), Φθορίωση.</li>
+                </ul></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Dental Tips Section -->
+<section class="dental-tips text-center fade-in" id="dental-tips">
+    <div class="container">
+        <h2>ΣΥΜΒΟΥΛΕΣ ΓΙΑ ΥΓΙΗ ΔΟΝΤΙΑ</h2>
+        <div class="row">
+            <div class="col-md-4">                <div class="service-card">
+
+                <h4>Τακτικός Καθαρισμός Δοντιών</h4>
+                <ul>
+                    <li>Ο τακτικός καθαρισμός των δοντιών είναι η βάση για την πρόληψη τερηδόνας και περιοδοντίτιδας.</li>
+                    <li>Συνιστάται να επισκέπτεστε τον οδοντίατρο τουλάχιστον δύο φορές το χρόνο.</li>
+                </ul></div>
+            </div>
+            <div class="col-md-4">                <div class="service-card">
+
+                <h4>Σωστή Χρήση Οδοντικού Νήματος</h4>
+                <ul>
+                    <li>Η χρήση οδοντικού νήματος είναι σημαντική για την απομάκρυνση της πλάκας και των υπολειμμάτων τροφής από περιοχές που δεν μπορεί να φτάσει η οδοντόβουρτσα.</li>
+                </ul></div>
+            </div>
+            <div class="col-md-4">                <div class="service-card">
+
+                <h4>Αποφυγή Ζαχαρούχων Ροφημάτων</h4>
+                <ul>
+                    <li>Η κατανάλωση ζαχαρούχων ροφημάτων συμβάλλει στη δημιουργία τερηδόνας.</li>
+                    <li>Προτιμήστε το νερό ή άλλα μη ζαχαρούχα ροφήματα για την καλύτερη υγεία των δοντιών σας.</li>
+                </ul></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">                <div class="service-card">
+
+                <h4>Προστασία με Νάρθηκα</h4>
+                <ul>
+                    <li>Η χρήση νάρθηκα κατά τη διάρκεια αθλητικών δραστηριοτήτων προστατεύει τα δόντια από τραυματισμούς και άλλες βλάβες.</li>
+                    <li>Ειδικά για τα αθλήματα με επαφή, ο αθλητικός νάρθηκας είναι απαραίτητος.</li>
+                </ul></div>
+            </div>
+            <div class="col-md-4">                <div class="service-card">
+
+                <h4>Διατροφή για Υγιή Δόντια</h4>
+                <ul>
+                    <li>Η καλή διατροφή παίζει σημαντικό ρόλο στην υγεία των δοντιών.</li>
+                    <li>Εντάξτε στη διατροφή σας τρόφιμα πλούσια σε ασβέστιο και βιταμίνες, όπως γαλακτοκομικά, φρούτα και λαχανικά.</li>
+                </ul></div>
+            </div>
+            <div class="col-md-4">                <div class="service-card">
+
+                <h4>Αποφυγή Καπνίσματος</h4>
+                <ul>
+                    <li>Το κάπνισμα προκαλεί αποχρωματισμό των δοντιών, κακοσμία στόματος και αυξάνει τον κίνδυνο περιοδοντικών παθήσεων.</li>
+                    <li>Η διακοπή του καπνίσματος είναι το καλύτερο βήμα για την προστασία της στοματικής υγείας.</li>
+                </ul></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">                <div class="service-card">
+
+                <h4>Λεύκανση Δοντιών</h4>
+                <ul>
+                    <li>Η λεύκανση δοντιών με επαγγελματική θεραπεία μπορεί να βοηθήσει στην απομάκρυνση χρωστικών και να δώσει φυσική λευκότητα.</li>
+                    <li>Εξετάστε τις επιλογές σας με τον οδοντίατρο για καλύτερα αποτελέσματα.</li>
+                </ul></div>
+            </div>
+            <div class="col-md-4">                <div class="service-card">
+
+                <h4>Περιοδική Εξέταση Δοντιών</h4>
+                <ul>
+                    <li>Οι περιοδικές οδοντιατρικές εξετάσεις είναι ζωτικής σημασίας για την έγκαιρη διάγνωση και θεραπεία πιθανών προβλημάτων.</li>
+                    <li>Επισκεφθείτε τον οδοντίατρο τουλάχιστον μία φορά το χρόνο για προληπτική φροντίδα.</li>
+                </ul></div>
+            </div>
+            <div class="col-md-4">                <div class="service-card">
+
+                <h4>Φθορίωση για Προστασία</h4>
+                <ul>
+                    <li>Η φθορίωση είναι μια αποτελεσματική μέθοδος για την προστασία των δοντιών από τερηδόνα.</li>
+                    <li>Οι οδοντίατροι συνιστούν φθορίωση για τα παιδιά, καθώς και για ενήλικες με αυξημένο κίνδυνο τερηδόνας.</li>
+                </ul></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Map Section -->
+<section class="map-section fade-in">
+    <div class="container">
+        <h2>Βρείτε μας Εδώ</h2>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3072.5173427073587!2d22.412457483066767!3d39.638070129388225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13588899e0729293%3A0x7db6dcd037d0fe46!2zzqHOv8-Nz4POss61zrvPhCA2LCDOm86sz4HOuc-DzrEgNDEyIDIy!5e0!3m2!1sel!2sgr!4v1740913505597!5m2!1sel!2sgr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    </div>
+</section>
+
+        
+        <section class="text-center" id="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>Email: azinouli@yahoo.gr | σταθερό: 2410534986 | κινητό: 6938375045 </p>
+                <p>Ρούσβελτ 6 Λάρισα 5ος Οροφος</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Αθηνά Ζηνούλη-Τσιτώτα. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
