@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="el">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Οδοντιατρείο Αθηνάς Ζηνούλη - Υψηλής ποιότητας οδοντιατρικές υπηρεσίες στη Λάρισα. Πάνω από 30 χρόνια εμπειρίας.">
+    <title>Οδοντιατρείο Αθηνάς Ζηνούλη | Λάρισα</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar text-center py-2">
+        <div class="container">
+            <a href="tel:+302410534986" class="me-4 text-white"><i class="bi bi-telephone-fill"></i> 2410-534986</a>
+            <a href="tel:+306938375045" class="me-4 text-white"><i class="bi bi-phone-fill"></i> 69-38375045</a>
+            <a href="mailto:azinouli@yahoo.gr" class="text-white"><i class="bi bi-envelope-fill"></i>
+                azinouli@yahoo.gr</a>
+        </div>
+    </div>
+
+    <!-- Header with Navigation -->
+    <header class="main-header py-3">
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row align-items-center justify-content-between">
+                <div class="d-flex align-items-center mb-3 mb-md-0">
+                    <img src="photos/logo_enhanced.jpg" alt="Οδοντιατρείο Αθηνάς Ζηνούλη" class="logo">
+                    <div class="ms-3">
+                        <h1 class="site-title m-0">Αθηνά Ζηνούλη-Τσιτώτα</h1>
+                        <p class="site-subtitle m-0">Χειρουργός Οδοντίατρος</p>
+                    </div>
+                </div>
+
+                <!-- Navigation Links -->
+                <nav class="header-nav">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item"><a class="nav-link" href="#home">ΑΡΧΙΚΗ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">ΠΡΟΦΙΛ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">ΥΠΗΡΕΣΙΕΣ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#dental-tips">DENTAL TIPS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Toggle Button -->
+    <button id="sidebarToggle" class="btn position-fixed d-md-none">
+        <i class="bi bi-list"></i>
+    </button>
+
+    <!-- Sidebar for Mobile -->
+    <nav id="sidebar" class="bg-white sidebar">
+        <div class="position-sticky">
+            <ul class="nav flex-column">
+                <li class="nav-item"><a class="nav-link" href="#home"><i class="bi bi-house-fill me-2"></i>ΑΡΧΙΚΗ</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#about"><i class="bi bi-person-fill me-2"></i>ΠΡΟΦΙΛ</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#services"><i
+                            class="bi bi-gear-fill me-2"></i>ΥΠΗΡΕΣΙΕΣ</a></li>
+                <li class="nav-item"><a class="nav-link" href="#dental-tips"><i
+                            class="bi bi-lightbulb-fill me-2"></i>DENTAL TIPS</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact"><i
+                            class="bi bi-envelope-fill me-2"></i>ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Overlay (for shadow effect) -->
+    <div id="overlay"></div>
+
+    <main class="main-content">
+        <!-- Hero Section -->
+        <div class="hero" id="home">
+            <!-- Background Carousel -->
+            <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000"
+                data-bs-pause="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="photos/img-20231027-15464427-10-2023-02-00-58.jpg" class="d-block w-100"
+                            alt="Οδοντιατρικός Εξοπλισμός">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="photos/img-20231027-15440827-10-2023-02-00-57.jpg" class="d-block w-100"
+                            alt="Αίθουσα Αναμονής">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="photos/20241105-13494622-11-2024-10-42-59.webp" class="d-block w-100" alt="Κλινική">
+                    </div>
+                </div>
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <!-- Overlay -->
+            <div class="hero-overlay">
+                <div class="hero-content">
+                    <h1>Οδοντιατρείο Αθηνάς Ζηνούλη</h1>
+                    <p class="hero-subtitle">Υψηλής ποιότητας οδοντιατρική φροντίδα με πάνω από 30 χρόνια εμπειρίας</p>
+                    <a href="#contact" class="btn btn-hero">Κλείστε Ραντεβού</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Fix the initial delay issue -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let heroCarousel = new bootstrap.Carousel(document.getElementById("heroCarousel"), {
+                interval: 4000,
+                ride: "carousel"
+            });
+        });
+    </script>
+
+    <!-- About Section -->
+    <section id="about" class="about-us">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-badge">ΓΝΩΡΙΣΤΕ ΜΕ</span>
+                <h2>Ποια Είμαι</h2>
+            </div>
+            <div class="row align-items-center">
+                <!-- Dentist's Profile Picture -->
+                <div class="col-lg-4 text-center mb-4 mb-lg-0">
+                    <div class="profile-wrapper">
+                        <img src="photos/profile1.jpg" alt="Αθηνά Ζηνούλη - Οδοντίατρος"
+                            class="profile-photo img-fluid">
+                        <div class="profile-decoration"></div>
+                    </div>
+                </div>
+
+                <!-- About Text -->
+                <div class="col-lg-8">
+                    <div class="about-content">
+                        <p class="lead">
+                            Καλώς ήρθατε στην κλινική μου, όπου η υγεία και η αισθητική του χαμόγελού σας είναι η
+                            προτεραιότητά μου.
+                        </p>
+                        <p>
+                            Είμαι η <strong>Αθηνά Ζηνούλη</strong>, η επικεφαλής οδοντίατρος του ιατρείου μου. Διαθέτω
+                            πάνω από <strong>30 χρόνια εμπειρίας</strong> στον τομέα της οδοντιατρικής και έχω σπουδάσει
+                            στο <strong>Αριστοτέλειο Πανεπιστήμιο Θεσσαλονίκης</strong>. Έχω αναπτύξει τη φήμη μου ως
+                            μία από τις κορυφαίες οδοντιάτρους στην περιοχή, προσφέροντας καινοτόμες και αποτελεσματικές
+                            θεραπείες.
+                        </p>
+                        <p>
+                            Στην κλινική μου, με υπερσύγχρονο εξοπλισμό και τεχνολογία τελευταίας γενιάς, προσφέρω
+                            εξατομικευμένες θεραπείες για κάθε ασθενή. Η φιλοσοφία μου επικεντρώνεται στην πρόληψη, τη
+                            θεραπεία και την αισθητική βελτίωση του χαμόγελου.
+                        </p>
+                        <div class="about-features">
+                            <div class="feature-item">
+                                <i class="bi bi-award-fill"></i>
+                                <span>30+ Χρόνια Εμπειρίας</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="bi bi-mortarboard-fill"></i>
+                                <span>Απόφοιτος Α.Π.Θ.</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="bi bi-heart-pulse-fill"></i>
+                                <span>Προσωπική Φροντίδα</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clinic Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-badge">Ο ΧΩΡΟΣ ΜΑΣ</span>
+                <h2>Το Ιατρείο</h2>
+                <p class="gallery-hint">Κάντε κλικ στις φωτογραφίες για μεγέθυνση</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="gallery-item" data-lightbox="photos/img-20231027-15464427-10-2023-02-00-58.jpg"
+                        data-title="Σύγχρονος Εξοπλισμός">
+                        <img src="photos/img-20231027-15464427-10-2023-02-00-58.jpg" alt="Οδοντιατρικός Εξοπλισμός"
+                            class="img-fluid">
+                        <div class="gallery-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                            <span>Σύγχρονος Εξοπλισμός</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item" data-lightbox="photos/img-20231027-15440827-10-2023-02-00-57.jpg"
+                        data-title="Αίθουσα Αναμονής">
+                        <img src="photos/img-20231027-15440827-10-2023-02-00-57.jpg" alt="Αίθουσα Αναμονής"
+                            class="img-fluid">
+                        <div class="gallery-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                            <span>Αίθουσα Αναμονής</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item" data-lightbox="photos/20241105-13494622-11-2024-10-42-59.webp"
+                        data-title="Κλινική">
+                        <img src="photos/20241105-13494622-11-2024-10-42-59.webp" alt="Κλινική" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                            <span>Κλινική</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <button class="lightbox-close" aria-label="Κλείσιμο">&times;</button>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="">
+            <div id="lightbox-caption" class="lightbox-caption"></div>
+        </div>
+        <button class="lightbox-prev" aria-label="Προηγούμενη"><i class="bi bi-chevron-left"></i></button>
+        <button class="lightbox-next" aria-label="Επόμενη"><i class="bi bi-chevron-right"></i></button>
+    </div>
+
+    <!-- ΥΠΗΡΕΣΙΕΣ Section -->
+    <section class="services text-center fade-in" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">ΤΙ ΠΡΟΣΦΕΡΟΥΜΕ</span>
+                <h2>Υπηρεσίες</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-droplet-fill"></i>
+                        </div>
+                        <h4>Καθαρισμός Δοντιών</h4>
+                        <ul>
+                            <li>Απομάκρυνση οδοντικής πέτρας</li>
+                            <li>Συνιστάται μία φορά το εξάμηνο</li>
+                            <li>Έλεγχος οδοντοστοιχίας</li>
+                            <li>Οδοντόγραμμα & ιστορικό</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-scissors"></i>
+                        </div>
+                        <h4>Εξαγωγή Δοντιού</h4>
+                        <ul>
+                            <li>Έσχατη λύση θεραπείας</li>
+                            <li>Προχωρημένη τερηδόνα</li>
+                            <li>Περιοδοντίτιδα</li>
+                            <li>Έγκλειστα δόντια</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-shield-fill-check"></i>
+                        </div>
+                        <h4>Νάρθηκας Βρουξισμού</h4>
+                        <ul>
+                            <li>Προστασία δοντιών</li>
+                            <li>Αθλητικός νάρθηκας</li>
+                            <li>Μείωση κινδύνου τραυματισμών</li>
+                            <li>Προστασία κροταφογναθικής</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 mt-2">
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-grid-fill"></i>
+                        </div>
+                        <h4>Οδοντοστοιχίες</h4>
+                        <ul>
+                            <li>Μερικές οδοντοστοιχίες</li>
+                            <li>Ολικές οδοντοστοιχίες</li>
+                            <li>Υψηλής αντοχής υλικά</li>
+                            <li>Φυσική εμφάνιση</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-gem"></i>
+                        </div>
+                        <h4>Κεραμικά Επένθετα</h4>
+                        <ul>
+                            <li>Porcelain Onlays</li>
+                            <li>Άριστο αισθητικό αποτέλεσμα</li>
+                            <li>Καλύτερη εφαρμογή</li>
+                            <li>Μεγαλύτερη αντοχή</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-heart-fill"></i>
+                        </div>
+                        <h4>Ολοκεραμικές Στεφάνες</h4>
+                        <ul>
+                            <li>Πορσελάνη ή ζιρκόνιο</li>
+                            <li>Ιδανικές για αισθητική</li>
+                            <li>Κάλυψη χρωστικών</li>
+                            <li>Φυσική εμφάνιση</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 mt-2">
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-emoji-smile-fill"></i>
+                        </div>
+                        <h4>Dental Face Lift</h4>
+                        <ul>
+                            <li>Εξατομικευμένοι νάρθηκες</li>
+                            <li>Ανακούφιση πονοκεφάλων</li>
+                            <li>Βελτίωση εμφάνισης</li>
+                            <li>Μείωση ρυτίδων</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-bandaid-fill"></i>
+                        </div>
+                        <h4>Περιοδοντίτιδα & Ουλίτιδα</h4>
+                        <ul>
+                            <li>Θεραπεία φλεγμονών</li>
+                            <li>Προστασία ιστών</li>
+                            <li>Αντιμετώπιση αιμορραγίας</li>
+                            <li>Πρόληψη απώλειας δοντιών</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-palette-fill"></i>
+                        </div>
+                        <h4>Λευκά Σφραγίσματα</h4>
+                        <ul>
+                            <li>Αισθητικά άριστο αποτέλεσμα</li>
+                            <li>Μεγαλύτερη αντοχή</li>
+                            <li>Σύνθετες ρητίνες</li>
+                            <li>Ισχυρή συγκόλληση</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 mt-2">
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-shield-plus-fill"></i>
+                        </div>
+                        <h4>Φθορίωση</h4>
+                        <ul>
+                            <li>Προστασία από τερηδόνα</li>
+                            <li>Ιδανική για παιδιά 3-4 ετών</li>
+                            <li>Ενδυνάμωση σμάλτου</li>
+                            <li>Επαγγελματική εφαρμογή</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-plus-circle-fill"></i>
+                        </div>
+                        <h4>Σφράγισμα</h4>
+                        <ul>
+                            <li>Αποκατάσταση φθοράς</li>
+                            <li>Προστασία από τερηδόνα</li>
+                            <li>Βελτίωση αισθητικής</li>
+                            <li>Διάρκεια ζωής δοντιού</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-stars"></i>
+                        </div>
+                        <h4>Όψεις Πορσελάνης</h4>
+                        <ul>
+                            <li>Βελτίωση σχήματος</li>
+                            <li>Διόρθωση χρώματος</li>
+                            <li>Φυσικό αποτέλεσμα</li>
+                            <li>Ενίσχυση αυτοπεποίθησης</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 mt-2">
+                <div class="col-md-4 offset-md-2">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-sun-fill"></i>
+                        </div>
+                        <h4>Λεύκανση</h4>
+                        <ul>
+                            <li>Υπεροξείδιο καρβίδιου</li>
+                            <li>Θεαματικά αποτελέσματα</li>
+                            <li>Στο ιατρείο ή στο σπίτι</li>
+                            <li>Ασφαλής διαδικασία</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-clipboard-pulse"></i>
+                        </div>
+                        <h4>Προληπτική Οδοντιατρική</h4>
+                        <ul>
+                            <li>Τακτικός καθαρισμός</li>
+                            <li>Κάλυψη σχισμών (sealants)</li>
+                            <li>Φθορίωση</li>
+                            <li>Έγκαιρη διάγνωση</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dental Tips Section -->
+    <section class="dental-tips text-center fade-in" id="dental-tips">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">ΧΡΗΣΙΜΕΣ ΠΛΗΡΟΦΟΡΙΕΣ</span>
+                <h2>Συμβουλές για Υγιή Δόντια</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="bi bi-calendar-check-fill"></i>
+                        </div>
+                        <h4>Τακτικός Καθαρισμός</h4>
+                        <p>Επισκεφθείτε τον οδοντίατρο τουλάχιστον δύο φορές το χρόνο για πρόληψη τερηδόνας και
+                            περιοδοντίτιδας.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="bi bi-flower2"></i>
+                        </div>
+                        <h4>Οδοντικό Νήμα</h4>
+                        <p>Χρησιμοποιείτε οδοντικό νήμα για απομάκρυνση της πλάκας από περιοχές που δεν φτάνει η
+                            οδοντόβουρτσα.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="bi bi-cup-straw"></i>
+                        </div>
+                        <h4>Αποφυγή Ζάχαρης</h4>
+                        <p>Περιορίστε τα ζαχαρούχα ροφήματα. Προτιμήστε νερό για την καλύτερη υγεία των δοντιών σας.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 mt-2">
+                <div class="col-md-4">
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="bi bi-shield-fill-check"></i>
+                        </div>
+                        <h4>Αθλητική Προστασία</h4>
+                        <p>Χρησιμοποιήστε νάρθηκα κατά τις αθλητικές δραστηριότητες για προστασία από τραυματισμούς.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="bi bi-egg-fried"></i>
+                        </div>
+                        <h4>Σωστή Διατροφή</h4>
+                        <p>Τρόφιμα πλούσια σε ασβέστιο και βιταμίνες (γαλακτοκομικά, φρούτα, λαχανικά) ενισχύουν τα
+                            δόντια.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="bi bi-x-circle-fill"></i>
+                        </div>
+                        <h4>Όχι στο Κάπνισμα</h4>
+                        <p>Το κάπνισμα προκαλεί αποχρωματισμό και αυξάνει τον κίνδυνο περιοδοντικών παθήσεων.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Map Section -->
+    <section class="map-section fade-in">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-badge">ΤΟΠΟΘΕΣΙΑ</span>
+                <h2>Βρείτε μας Εδώ</h2>
+            </div>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3072.5173427073587!2d22.412457483066767!3d39.638070129388225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13588899e0729293%3A0x7db6dcd037d0fe46!2zzqHOv8-Nz4POss61zrvPhCA2LCDOm86sz4HOuc-DzrEgNDEyIDIy!5e0!3m2!1sel!2sgr!4v1740913505597!5m2!1sel!2sgr"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-badge">ΡΩΤΗΣΤΕ ΜΑΣ</span>
+                <h2>Επικοινωνία</h2>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-cards">
+                        <div class="row g-4">
+                            <div class="col-md-4">
+                                <div class="contact-card">
+                                    <div class="contact-icon">
+                                        <i class="bi bi-geo-alt-fill"></i>
+                                    </div>
+                                    <h5>Διεύθυνση</h5>
+                                    <p>Ρούσβελτ 6, Λάρισα<br>5ος Όροφος</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="contact-card">
+                                    <div class="contact-icon">
+                                        <i class="bi bi-telephone-fill"></i>
+                                    </div>
+                                    <h5>Τηλέφωνα</h5>
+                                    <p><a href="tel:+302410534986">2410-534986</a><br><a
+                                            href="tel:+306938375045">6938-375045</a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="contact-card">
+                                    <div class="contact-icon">
+                                        <i class="bi bi-envelope-fill"></i>
+                                    </div>
+                                    <h5>Email</h5>
+                                    <p><a href="mailto:azinouli@yahoo.gr">azinouli@yahoo.gr</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025 Αθηνά Ζηνούλη-Τσιτώτα. Με επιφύλαξη παντός δικαιώματος.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="footer-social">
+                        <a href="tel:+302410534986"><i class="bi bi-telephone-fill"></i></a>
+                        <a href="mailto:azinouli@yahoo.gr"><i class="bi bi-envelope-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
