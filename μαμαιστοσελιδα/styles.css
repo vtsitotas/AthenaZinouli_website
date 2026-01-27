@@ -839,6 +839,78 @@ body.lightbox-open {
     color: var(--primary-dark);
 }
 
+/* ===== HOURS CARD ===== */
+.hours-card {
+    background: var(--bg-white);
+    padding: 35px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-md);
+    height: 100%;
+}
+
+.hours-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.hours-header i {
+    font-size: 1.8rem;
+    color: var(--primary);
+}
+
+.hours-header h4 {
+    margin: 0;
+    font-size: 1.3rem;
+    color: var(--text-dark);
+}
+
+.hours-note {
+    background: var(--gradient-primary);
+    color: white;
+    display: inline-block;
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.hours-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.hours-table td {
+    padding: 12px 0;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 0.95rem;
+}
+
+.hours-table tr:last-child td {
+    border-bottom: none;
+}
+
+.hours-table td:first-child {
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.hours-table td:last-child {
+    text-align: right;
+    color: var(--primary);
+    font-weight: 500;
+}
+
+.hours-table tr.closed td {
+    color: #ef4444;
+}
+
+.hours-table tr.closed td:last-child {
+    color: #ef4444;
+}
+
 /* ===== FOOTER ===== */
 .footer {
     background: var(--text-dark);
