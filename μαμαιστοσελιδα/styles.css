@@ -388,6 +388,8 @@ p {
     backdrop-filter: blur(10px);
     opacity: 0.8;
     transition: var(--transition);
+    z-index: 20;
+    /* Higher than hero-overlay (10) */
 }
 
 .carousel-control-prev:hover,
