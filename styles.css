@@ -317,6 +317,8 @@ p {
     justify-content: center;
     background: linear-gradient(135deg, rgba(0, 119, 182, 0.6) 0%, rgba(0, 180, 216, 0.4) 100%);
     z-index: 10;
+    pointer-events: none;
+    /* Allow clicks to pass through to carousel controls */
 }
 
 .hero-content {
@@ -324,6 +326,7 @@ p {
     color: white;
     max-width: 800px;
     padding: 40px;
+    pointer-events: none;
 }
 
 .hero-content h1 {
@@ -356,6 +359,10 @@ p {
     box-shadow: var(--shadow-md);
     animation: fadeInUp 1s ease 0.4s;
     animation-fill-mode: both;
+    pointer-events: auto;
+    /* Re-enable clicks for the button */
+    position: relative;
+    z-index: 30;
 }
 
 .btn-hero:hover {
@@ -376,6 +383,11 @@ p {
     }
 }
 
+/* Ensure carousel transition is smooth */
+.carousel-item {
+    transition: transform 0.6s ease-in-out;
+}
+
 .carousel-control-prev,
 .carousel-control-next {
     width: 60px;
@@ -390,6 +402,9 @@ p {
     transition: var(--transition);
     z-index: 20;
     /* Higher than hero-overlay (10) */
+    pointer-events: auto;
+    /* Ensure clickable */
+    cursor: pointer;
 }
 
 .carousel-control-prev:hover,
