@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Add active class to navigation based on scroll position
-    const sections = document.querySelectorAll('section[id]');
+    const sections = document.querySelectorAll('section[id], div[id]');
     const navLinks = document.querySelectorAll('.header-nav .nav-link, #sidebar .nav-link');
 
     function updateActiveNav() {
@@ -236,5 +236,39 @@ document.addEventListener('DOMContentLoaded', function () {
     // Add transition styles for smooth image changes
     if (lightboxImg) {
         lightboxImg.style.transition = 'opacity 0.15s ease, transform 0.15s ease';
+    }
+
+    // ===== APPOINTMENT FORM =====
+    const appointmentForm = document.getElementById('appointmentForm');
+    if (appointmentForm) {
+        appointmentForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const name = document.getElementById('form-name').value.trim();
+            const phone = document.getElementById('form-phone').value.trim();
+
+            if (!name || !phone) {
+                document.getElementById('form-name').reportValidity();
+                document.getElementById('form-phone').reportValidity();
+                return;
+            }
+
+            const date = document.getElementById('form-date').value;
+            const service = document.getElementById('form-service').value;
+            const message = document.getElementById('form-message').value.trim();
+
+            const subject = encodeURIComponent('Αίτηση Ραντεβού - ' + name);
+            let body = `Ονοματεπώνυμο: ${name}\nΤηλέφωνο: ${phone}`;
+            if (date) body += `\nΕπιθυμητή Ημερομηνία: ${date}`;
+            if (service) body += `\nΥπηρεσία: ${service}`;
+            if (message) body += `\nΜήνυμα: ${message}`;
+
+            window.location.href = `mailto:azinouli@yahoo.gr?subject=${subject}&body=${encodeURIComponent(body)}`;
+
+            appointmentForm.reset();
+            const successMsg = document.getElementById('form-success');
+            successMsg.classList.remove('d-none');
+            setTimeout(() => successMsg.classList.add('d-none'), 5000);
+        });
     }
 });
