@@ -2004,6 +2004,27 @@ button:focus-visible,
   gap: 14px;
 }
 
+.footer-credit {
+  text-align: center;
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.4);
+  letter-spacing: 0.3px;
+}
+
+.footer-credit a {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.footer-credit a:hover {
+  color: var(--primary-light);
+}
+
 @media (max-width: 767px) {
   .footer-bottom {
     flex-direction: column;
