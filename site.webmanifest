@@ -1,0 +1,22 @@
+{
+  "name": "Οδοντιατρείο Αθηνάς Ζηνούλη",
+  "short_name": "Αθ. Ζηνούλη",
+  "description": "Οδοντιατρείο Αθηνάς Ζηνούλη - Υψηλής ποιότητας οδοντιατρικές υπηρεσίες στη Λάρισα.",
+  "lang": "el",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0077b6",
+  "icons": [
+    {
+      "src": "photos/logo_enhanced.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "photos/logo_enhanced.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}
